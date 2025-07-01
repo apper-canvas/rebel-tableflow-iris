@@ -1,16 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
-
+import { selectUserRole, selectIsAdmin } from '@/store/slices/permissionSlice';
 const Sidebar = () => {
+  const userRole = useSelector(selectUserRole);
+  const isAdmin = useSelector(selectIsAdmin);
+  
   const navigation = [
     { name: 'Tables', href: '/tables', icon: 'Utensils' },
     { name: 'Orders', href: '/orders', icon: 'ChefHat' },
     { name: 'Reservations', href: '/reservations', icon: 'Calendar' },
     { name: 'Bills', href: '/bills', icon: 'Receipt' },
   ];
-
   return (
     <div className="w-64 bg-white shadow-lg border-r border-gray-200 h-full">
       <div className="p-6 border-b border-gray-200">
@@ -59,14 +62,20 @@ const Sidebar = () => {
         </ul>
       </nav>
 
-      <div className="absolute bottom-0 w-64 p-6 border-t border-gray-200 bg-surface">
+<div className="absolute bottom-0 w-64 p-6 border-t border-gray-200 bg-surface">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-secondary-500 rounded-full flex items-center justify-center">
-            <ApperIcon name="User" size={16} className="text-white" />
+          <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+            isAdmin ? 'bg-gradient-to-br from-primary-500 to-accent-500' : 'bg-secondary-500'
+          }`}>
+            <ApperIcon name={isAdmin ? "Shield" : "User"} size={16} className="text-white" />
           </div>
           <div>
-            <p className="text-sm font-medium text-gray-900 font-body">Restaurant Staff</p>
-            <p className="text-xs text-gray-500 font-body">Active Session</p>
+            <p className="text-sm font-medium text-gray-900 font-body">
+              {isAdmin ? 'Administrator' : 'Restaurant Staff'}
+            </p>
+            <p className="text-xs text-gray-500 font-body">
+              {isAdmin ? 'Full Access' : 'Active Session'}
+            </p>
           </div>
         </div>
       </div>
