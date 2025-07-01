@@ -9,6 +9,7 @@ import Error from '@/components/ui/Error';
 import Empty from '@/components/ui/Empty';
 import Button from '@/components/atoms/Button';
 import Select from '@/components/atoms/Select';
+import OrderCreateForm from '@/components/forms/OrderCreateForm';
 import { orderService } from '@/services/api/orderService';
 
 const OrdersList = () => {
@@ -18,7 +19,7 @@ const OrdersList = () => {
   const [error, setError] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
-
+  const [showCreateModal, setShowCreateModal] = useState(false);
   const loadOrders = async () => {
     try {
       setLoading(true);
@@ -118,14 +119,19 @@ const OrdersList = () => {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
         <div>
           <h2 className="text-2xl font-display font-bold text-gray-900">Active Orders</h2>
           <p className="text-gray-600 font-body mt-1">Track and manage all restaurant orders</p>
         </div>
-        <Button variant="primary" icon="RefreshCw" onClick={loadOrders}>
-          Refresh
-        </Button>
+        <div className="flex gap-3">
+          <Button variant="primary" icon="Plus" onClick={() => setShowCreateModal(true)}>
+            Create Order
+          </Button>
+          <Button variant="secondary" icon="RefreshCw" onClick={loadOrders}>
+            Refresh
+          </Button>
+        </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
@@ -163,7 +169,17 @@ const OrdersList = () => {
               onStatusChange={handleStatusChange}
             />
           ))}
-        </motion.div>
+</motion.div>
+      )}
+      
+      {showCreateModal && (
+        <OrderCreateForm
+          onClose={() => setShowCreateModal(false)}
+          onSuccess={() => {
+            setShowCreateModal(false);
+            loadOrders();
+          }}
+        />
       )}
     </div>
   );

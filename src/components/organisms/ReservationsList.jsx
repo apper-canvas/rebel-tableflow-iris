@@ -9,6 +9,7 @@ import Error from '@/components/ui/Error';
 import Empty from '@/components/ui/Empty';
 import Button from '@/components/atoms/Button';
 import Select from '@/components/atoms/Select';
+import ReservationCreateForm from '@/components/forms/ReservationCreateForm';
 import { reservationService } from '@/services/api/reservationService';
 
 const ReservationsList = () => {
@@ -18,7 +19,7 @@ const ReservationsList = () => {
   const [error, setError] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
-
+  const [showCreateModal, setShowCreateModal] = useState(false);
   const loadReservations = async () => {
     try {
       setLoading(true);
@@ -116,14 +117,19 @@ const ReservationsList = () => {
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
         <div>
           <h2 className="text-2xl font-display font-bold text-gray-900">Reservations</h2>
           <p className="text-gray-600 font-body mt-1">Manage guest reservations and seating</p>
         </div>
-        <Button variant="primary" icon="RefreshCw" onClick={loadReservations}>
-          Refresh
-        </Button>
+        <div className="flex gap-3">
+          <Button variant="primary" icon="Plus" onClick={() => setShowCreateModal(true)}>
+            Create Reservation
+          </Button>
+          <Button variant="secondary" icon="RefreshCw" onClick={loadReservations}>
+            Refresh
+          </Button>
+        </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4">
@@ -161,7 +167,17 @@ const ReservationsList = () => {
               onStatusChange={handleStatusChange}
             />
           ))}
-        </motion.div>
+</motion.div>
+      )}
+      
+      {showCreateModal && (
+        <ReservationCreateForm
+          onClose={() => setShowCreateModal(false)}
+          onSuccess={() => {
+            setShowCreateModal(false);
+            loadReservations();
+          }}
+        />
       )}
     </div>
   );
