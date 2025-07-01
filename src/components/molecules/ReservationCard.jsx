@@ -80,28 +80,28 @@ const ReservationCard = ({ reservation, onStatusChange, className = "" }) => {
         </div>
       )}
 
-      <div className="flex gap-3">
-        {canSeat(reservation.status) && (
-          <Button
-            variant="primary"
-            icon="Users"
-            onClick={() => onStatusChange(reservation.id, 'seated')}
-            className="flex-1"
-          >
-            Seat Guests
-          </Button>
-        )}
-        {canCancel(reservation.status) && (
-          <Button
-            variant="danger"
-            icon="XCircle"
-            onClick={() => onStatusChange(reservation.id, 'cancelled')}
-            size="default"
-          >
-            Cancel
-          </Button>
-        )}
-      </div>
+<div className="flex gap-3">
+      {canSeat(reservation.status) && (
+        <Button
+          variant="primary"
+          icon="Users"
+          onClick={() => onStatusChange(reservation.Id, 'seated')}
+          className="flex-1"
+        >
+          Seat Guests
+        </Button>
+      )}
+      {canCancel(reservation.status) && (
+        <Button
+          variant="danger"
+          icon="XCircle"
+          onClick={() => onStatusChange(reservation.Id, 'cancelled')}
+          size="default"
+        >
+          Cancel
+        </Button>
+      )}
+    </div>
     </motion.div>
   );
 };
