@@ -1,0 +1,158 @@
+[
+  {
+    "Id": 1,
+    "tableId": "3",
+    "items": [
+      {
+        "menuItemId": "burger-classic",
+        "name": "Classic Burger",
+        "quantity": 2,
+        "price": 14.99
+      },
+      {
+        "menuItemId": "fries-large",
+        "name": "Large Fries",
+        "quantity": 1,
+        "price": 6.99
+      },
+      {
+        "menuItemId": "soda-cola",
+        "name": "Cola",
+        "quantity": 2,
+        "price": 2.99
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2024-01-15T18:30:00Z"
+  },
+  {
+    "Id": 2,
+    "tableId": "7",
+    "items": [
+      {
+        "menuItemId": "pasta-carbonara",
+        "name": "Pasta Carbonara",
+        "quantity": 1,
+        "price": 18.99
+      },
+      {
+        "menuItemId": "salad-caesar",
+        "name": "Caesar Salad",
+        "quantity": 1,
+        "price": 12.99
+      },
+      {
+        "menuItemId": "wine-red",
+        "name": "House Red Wine",
+        "quantity": 1,
+        "price": 8.99
+      }
+    ],
+    "status": "paid",
+    "createdAt": "2024-01-15T18:45:00Z"
+  },
+  {
+    "Id": 3,
+    "tableId": "11",
+    "items": [
+      {
+        "menuItemId": "pizza-margherita",
+        "name": "Margherita Pizza",
+        "quantity": 1,
+        "price": 16.99
+      },
+      {
+        "menuItemId": "appetizer-wings",
+        "name": "Buffalo Wings",
+        "quantity": 1,
+        "price": 11.99
+      },
+      {
+        "menuItemId": "beer-craft",
+        "name": "Craft Beer",
+        "quantity": 2,
+        "price": 5.99
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2024-01-15T19:00:00Z"
+  },
+  {
+    "Id": 4,
+    "tableId": "16",
+    "items": [
+      {
+        "menuItemId": "steak-ribeye",
+        "name": "Ribeye Steak",
+        "quantity": 1,
+        "price": 28.99
+      },
+      {
+        "menuItemId": "sides-mashed-potatoes",
+        "name": "Mashed Potatoes",
+        "quantity": 1,
+        "price": 7.99
+      },
+      {
+        "menuItemId": "vegetables-grilled",
+        "name": "Grilled Vegetables",
+        "quantity": 1,
+        "price": 9.99
+      }
+    ],
+    "status": "paid",
+    "createdAt": "2024-01-15T17:30:00Z"
+  },
+  {
+    "Id": 5,
+    "tableId": "12",
+    "items": [
+      {
+        "menuItemId": "chicken-parmesan",
+        "name": "Chicken Parmesan",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "menuItemId": "soup-tomato",
+        "name": "Tomato Soup",
+        "quantity": 1,
+        "price": 7.99
+      },
+      {
+        "menuItemId": "bread-garlic",
+        "name": "Garlic Bread",
+        "quantity": 1,
+        "price": 4.99
+      }
+    ],
+    "status": "paid",
+    "createdAt": "2024-01-15T17:00:00Z"
+  },
+  {
+    "Id": 6,
+    "tableId": "8",
+    "items": [
+      {
+        "menuItemId": "sandwich-club",
+        "name": "Club Sandwich",
+        "quantity": 2,
+        "price": 13.99
+      },
+      {
+        "menuItemId": "chips-kettle",
+        "name": "Kettle Chips",
+        "quantity": 2,
+        "price": 3.99
+      },
+      {
+        "menuItemId": "lemonade-fresh",
+        "name": "Fresh Lemonade",
+        "quantity": 2,
+        "price": 3.99
+      }
+    ],
+    "status": "pending",
+    "createdAt": "2024-01-15T19:15:00Z"
+  }
+]

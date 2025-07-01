@@ -1,0 +1,101 @@
+[
+  {
+    "Id": 1,
+    "customerName": "John Smith",
+    "phone": "(555) 123-4567",
+    "date": "2024-01-15",
+    "time": "19:00",
+    "partySize": 4,
+    "tableId": "5",
+    "status": "confirmed",
+    "notes": "Window seat preferred"
+  },
+  {
+    "Id": 2,
+    "customerName": "Sarah Johnson",
+    "phone": "(555) 234-5678",
+    "date": "2024-01-15",
+    "time": "18:30",
+    "partySize": 2,
+    "tableId": "22",
+    "status": "confirmed",
+    "notes": "Vegetarian options needed"
+  },
+  {
+    "Id": 3,
+    "customerName": "Michael Brown",
+    "phone": "(555) 345-6789",
+    "date": "2024-01-15",
+    "time": "20:00",
+    "partySize": 6,
+    "tableId": "13",
+    "status": "confirmed",
+    "notes": "Birthday celebration"
+  },
+  {
+    "Id": 4,
+    "customerName": "Emily Davis",
+    "phone": "(555) 456-7890",
+    "date": "2024-01-15",
+    "time": "17:30",
+    "partySize": 2,
+    "tableId": null,
+    "status": "seated",
+    "notes": ""
+  },
+  {
+    "Id": 5,
+    "customerName": "David Wilson",
+    "phone": "(555) 567-8901",
+    "date": "2024-01-15",
+    "time": "19:30",
+    "partySize": 4,
+    "tableId": null,
+    "status": "confirmed",
+    "notes": "High chair needed"
+  },
+  {
+    "Id": 6,
+    "customerName": "Lisa Garcia",
+    "phone": "(555) 678-9012",
+    "date": "2024-01-15",
+    "time": "18:00",
+    "partySize": 8,
+    "tableId": null,
+    "status": "confirmed",
+    "notes": "Corporate dinner - separate checks"
+  },
+  {
+    "Id": 7,
+    "customerName": "Robert Lee",
+    "phone": "(555) 789-0123",
+    "date": "2024-01-15",
+    "time": "20:30",
+    "partySize": 2,
+    "tableId": null,
+    "status": "cancelled",
+    "notes": "Last minute cancellation"
+  },
+  {
+    "Id": 8,
+    "customerName": "Jennifer Taylor",
+    "phone": "(555) 890-1234",
+    "date": "2024-01-16",
+    "time": "19:00",
+    "partySize": 3,
+    "tableId": null,
+    "status": "confirmed",
+    "notes": "Anniversary dinner"
+  },
+  {
+    "Id": 9,
+    "customerName": "Christopher Martin",
+    "phone": "(555) 901-2345",
+    "date": "2024-01-16",
+    "time": "18:30",
+    "partySize": 5,
+    "tableId": null,
+    "status": "confirmed",
+    "notes": "Gluten-free options required"
+  }
+]

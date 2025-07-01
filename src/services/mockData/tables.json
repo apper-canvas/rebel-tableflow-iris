@@ -1,0 +1,194 @@
+[
+  {
+    "Id": 1,
+    "number": 1,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 0 }
+  },
+  {
+    "Id": 2,
+    "number": 2,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 0 }
+  },
+  {
+    "Id": 3,
+    "number": 3,
+    "capacity": 4,
+    "status": "occupied",
+    "currentOrderId": "101",
+    "position": { "x": 2, "y": 0 }
+  },
+  {
+    "Id": 4,
+    "number": 4,
+    "capacity": 4,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 3, "y": 0 }
+  },
+  {
+    "Id": 5,
+    "number": 5,
+    "capacity": 6,
+    "status": "reserved",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 1 }
+  },
+  {
+    "Id": 6,
+    "number": 6,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 1 }
+  },
+  {
+    "Id": 7,
+    "number": 7,
+    "capacity": 4,
+    "status": "occupied",
+    "currentOrderId": "102",
+    "position": { "x": 2, "y": 1 }
+  },
+  {
+    "Id": 8,
+    "number": 8,
+    "capacity": 4,
+    "status": "cleaning",
+    "currentOrderId": null,
+    "position": { "x": 3, "y": 1 }
+  },
+  {
+    "Id": 9,
+    "number": 9,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 2 }
+  },
+  {
+    "Id": 10,
+    "number": 10,
+    "capacity": 8,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 2 }
+  },
+  {
+    "Id": 11,
+    "number": 11,
+    "capacity": 4,
+    "status": "occupied",
+    "currentOrderId": "103",
+    "position": { "x": 2, "y": 2 }
+  },
+  {
+    "Id": 12,
+    "number": 12,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 3, "y": 2 }
+  },
+  {
+    "Id": 13,
+    "number": 13,
+    "capacity": 6,
+    "status": "reserved",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 3 }
+  },
+  {
+    "Id": 14,
+    "number": 14,
+    "capacity": 4,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 3 }
+  },
+  {
+    "Id": 15,
+    "number": 15,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 2, "y": 3 }
+  },
+  {
+    "Id": 16,
+    "number": 16,
+    "capacity": 4,
+    "status": "occupied",
+    "currentOrderId": "104",
+    "position": { "x": 3, "y": 3 }
+  },
+  {
+    "Id": 17,
+    "number": 17,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 4 }
+  },
+  {
+    "Id": 18,
+    "number": 18,
+    "capacity": 4,
+    "status": "cleaning",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 4 }
+  },
+  {
+    "Id": 19,
+    "number": 19,
+    "capacity": 6,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 2, "y": 4 }
+  },
+  {
+    "Id": 20,
+    "number": 20,
+    "capacity": 2,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 3, "y": 4 }
+  },
+  {
+    "Id": 21,
+    "number": 21,
+    "capacity": 4,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 0, "y": 5 }
+  },
+  {
+    "Id": 22,
+    "number": 22,
+    "capacity": 2,
+    "status": "reserved",
+    "currentOrderId": null,
+    "position": { "x": 1, "y": 5 }
+  },
+  {
+    "Id": 23,
+    "number": 23,
+    "capacity": 4,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 2, "y": 5 }
+  },
+  {
+    "Id": 24,
+    "number": 24,
+    "capacity": 8,
+    "status": "available",
+    "currentOrderId": null,
+    "position": { "x": 3, "y": 5 }
+  }
+]
