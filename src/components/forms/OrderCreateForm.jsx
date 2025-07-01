@@ -347,13 +347,13 @@ const OrderCreateForm = ({ onClose, onSuccess }) => {
               >
                 Cancel
               </Button>
-              {currentStep < 2 ? (
+{currentStep < 2 ? (
                 <Button
                   type="button"
                   variant="primary"
                   onClick={nextStep}
                   icon="ArrowRight"
-                  disabled={!watch('tableId') || fields.some(item => !item.name)}
+                  disabled={!watch('tableId') || watchedItems.some(item => !item.name)}
                 >
                   Next
                 </Button>
